@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<div class="post-banner">
+  <div class="post-banner-blur" style="background-image: url('{{ page.thumb }}')"></div>
+  <img src="{{ page.thumb }}">
+</div>
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -12,10 +16,6 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
   </header>
-
-  <div class="post-banner" style="background-image: url('{{ page.thumb }}')'">
-    <img src="{{ page.thumb }}"
-  </div>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}

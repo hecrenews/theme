@@ -1,5 +1,16 @@
 .post-banner {
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(20px)
+  width: 100%;
+  position: relative;
+
+  .post-banner-blur {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    filter: blur(20px);
+  }
 };
