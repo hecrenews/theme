@@ -11,9 +11,11 @@ ul.post-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
   li {
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
     border-radius: 4px;
+    overflow: hidden;
     .post-thumb {
       display: block;
     }
@@ -23,6 +25,22 @@ ul.post-list {
     .post-link {
       text-decoration: underline;
       color: #33a5ff;
+    }
+    &:before {
+      background-color: #3a3a3a;
+      opacity: 0.8;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      transition: 0.3s;
+    }
+    &:hover {
+      &:before {
+        height: auto;
+      }
     }
   }
 }
