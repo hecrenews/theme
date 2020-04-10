@@ -37,12 +37,12 @@ ul.post-list {
       bottom: 0;
       left: 0;
       right: 0;
-      height: 0;
+      max-height: 0;
       transition: 0.3s;
     }
     &:hover {
       &:after {
-        height: auto;
+        max-height: 100vh; // Should not exceed this value
       }
     }
   }
