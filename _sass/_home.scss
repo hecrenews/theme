@@ -24,6 +24,8 @@ ul.post-list {
     }
     .post-text {
       padding: 16px;
+      display: flex;
+      justify-content: space-between;
     }
     .post-meta {
       font-family: sans-serif;
@@ -37,6 +39,7 @@ ul.post-list {
       background-color: #3a3a3a;
       opacity: 0.8;
       position: absolute;
+      top: 0;
       bottom: 0;
       left: 0;
       right: 0;
