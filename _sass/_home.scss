@@ -11,8 +11,7 @@ ul.post-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   li {
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
     border-radius: 4px;
@@ -23,14 +22,15 @@ ul.post-list {
     .post-thumb {
       display: block;
     }
+    .post-text {
+      padding: 16px;
+    }
     .post-meta {
       font-family: sans-serif;
-      padding: 16px;
     }
     .post-link {
       text-decoration: underline;
       color: #33a5ff;
-      padding: 16px;
     }
     &:after {
       content: "";
