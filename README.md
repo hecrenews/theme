@@ -1,0 +1,1 @@
+# Hecrenews Theme
