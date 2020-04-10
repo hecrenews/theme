@@ -12,7 +12,7 @@ ul.post-list {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-column: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   li {
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
     border-radius: 4px;
