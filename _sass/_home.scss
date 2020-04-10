@@ -11,15 +11,18 @@ ul.post-list {
   list-style: none;
   margin: 0;
   padding: 0;
-
   li {
-
-  }
-  .post-meta {
-    font-family: sans-serif;
-  }
-  .post-link {
-    text-decoration: underline;
-    color: #33a5ff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    border-radius: 4px;
+    .post-thumb {
+      display: block;
+    }
+    .post-meta {
+      font-family: sans-serif;
+    }
+    .post-link {
+      text-decoration: underline;
+      color: #33a5ff;
+    }
   }
 }
