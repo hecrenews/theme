@@ -13,11 +13,14 @@ nav {
       height: 64px;
     }
     li {
-      padding: 16px;
+      display: flex;
+      align-items: center;
+      transition: 0.3s;
       a {
         color: #fff;
         text-decoration: none;
         font-family: sans-serif;
+        padding: 16px;
       }
       &:hover {
         background-color: #ee2323;
