@@ -13,7 +13,9 @@ layout: default
       </time>
   </header>
 
-  <img src="{{ page.thumb }}">
+  <div class="post-banner" style="background-image: url('{{ page.thumb }}')'">
+    <img src="{{ page.thumb }}"
+  </div>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
