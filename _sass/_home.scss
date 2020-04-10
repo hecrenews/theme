@@ -29,6 +29,7 @@ ul.post-list {
       padding: 16px;
     }
     &:after {
+      content: "";
       background-color: #3a3a3a;
       opacity: 0.8;
       position: absolute;
