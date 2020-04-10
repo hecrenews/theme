@@ -11,11 +11,15 @@ ul.post-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-column: repeat(4, 1fr);
   li {
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
     border-radius: 4px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
     .post-thumb {
       display: block;
     }
@@ -33,7 +37,6 @@ ul.post-list {
       background-color: #3a3a3a;
       opacity: 0.8;
       position: absolute;
-      top: 0;
       bottom: 0;
       left: 0;
       right: 0;
@@ -42,7 +45,7 @@ ul.post-list {
     }
     &:hover {
       &:after {
-        max-height: 100vh; // Should not exceed this value
+        max-height: 50vh; // Should not exceed this value
       }
     }
   }
