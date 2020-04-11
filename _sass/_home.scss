@@ -12,6 +12,7 @@ ul.post-list {
   margin: 0;
   padding: 0;
   display: flex;
+
   li {
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
     border-radius: 4px;
@@ -19,22 +20,48 @@ ul.post-list {
     position: relative;
     display: flex;
     flex-direction: column;
+
+    .post-author {
+      display: absolute;
+      top: 4px;
+      left: 5px;
+
+      .post-author-icon {
+        border-radius: 50%;
+        padding: 8px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,.25);
+        transition: 0.3s;
+      }
+
+      &:hover {
+
+        .post-author-icon {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
     .post-thumb {
       display: block;
     }
+
     .post-text {
       padding: 16px;
       display: flex;
       justify-content: space-between;
+
+      .post-meta {
+        font-family: sans-serif;
+      }
+
+      .post-link {
+        font-family: sans-serif;
+        text-decoration: underline;
+        color: #33a5ff;
+      }
     }
-    .post-meta {
-      font-family: sans-serif;
-    }
-    .post-link {
-      font-family: sans-serif;
-      text-decoration: underline;
-      color: #33a5ff;
-    }
+
     &:after {
       content: "";
       background-color: #3a3a3a;
@@ -47,7 +74,9 @@ ul.post-list {
       max-height: 0;
       transition: 1s;
     }
+
     &:hover {
+
       &:after {
         max-height: 0; // Should not exceed this value
       }
