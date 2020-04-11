@@ -32,9 +32,20 @@ ul.post-list {
         background-color: #fff;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         transition: 0.3s;
+      }
 
-        &:hover {
+      .post-author-name {
+        opacity: 0;
+      }
+
+      &:hover {
+
+        .post-author-icon {
           transform: rotate(45deg);
+        }
+
+        .post-author-name {
+          opacity: 1;
         }
       }
     }
