@@ -15,8 +15,8 @@ layout: default
       {%- for post in site.posts -%}
       <li>
         <div class="post-author">
-          <img class="post-author-icon" src="/assets/authors/{{ post.author }}/icon.png">
-          <p class="post-author-name"><embed src="/assets/authors/{{ post.author }}/name.txt"></p>
+          <img class="post-author-icon" src="/_includes/authors/{{ post.author }}/icon.png">
+          {% include authors/{{ post.author }}/name.html %}
         </div>
         <img class="post-thumb" src="{{ post.thumb }}">
         <div class="post-text">
