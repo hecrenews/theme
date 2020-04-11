@@ -14,20 +14,22 @@ layout: default
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
-        <div class="post-author">
-          {% include authors/{{ post.author }}/icon.html %}
-          {% include authors/{{ post.author }}/name.html %}
-        </div>
-        <img class="post-thumb" src="{{ post.thumb }}">
-        <div class="post-text">
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
+        <div class="post">
+          <div class="post-author">
+            {% include authors/{{ post.author }}/icon.html %}
+            {% include authors/{{ post.author }}/name.html %}
+          </div>
+          <img class="post-thumb" src="{{ post.thumb }}">
+          <div class="post-text">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </div>
         </div>
       </li>
       {%- endfor -%}
