@@ -50,8 +50,6 @@ ul.post-list {
       }
 
       &:hover {
-        box-shadow: 0 1px 5px rgba(0,0,0,.25);
-
         :nth-child(1) {
           transform: rotate(45deg);
         }
@@ -97,7 +95,8 @@ ul.post-list {
     }
 
     &:hover {
-
+      box-shadow: 0 1px 5px rgba(0,0,0,.25);
+      
       &:after {
         max-height: 0; // Should not exceed this value
       }
