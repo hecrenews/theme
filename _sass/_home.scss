@@ -22,7 +22,7 @@ ul.post-list {
     flex-direction: column;
 
     .post-author {
-      display: absolute;
+      position: absolute;
       top: 4px;
       left: 5px;
 
@@ -32,11 +32,8 @@ ul.post-list {
         background-color: #fff;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         transition: 0.3s;
-      }
 
-      &:hover {
-
-        .post-author-icon {
+        &:hover {
           transform: rotate(45deg);
         }
       }
