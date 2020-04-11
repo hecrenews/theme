@@ -23,8 +23,8 @@ ul.post-list {
 
     .post-author {
       position: absolute;
-      top: 4px;
-      left: 5px;
+      top: 8px;
+      left: 8px;
 
       :nth-child(1) {
         border-radius: 50%;
@@ -36,16 +36,24 @@ ul.post-list {
 
       :nth-child(2) {
         opacity: 0;
+        position: absolute;
+        padding: 4px;
+        border-radius: 32px;
+        box-shadow: 0 1px 3px rgba(0,0,0,.25);
+        top: 8px;
+        left: 8px;
+        transition: 0.3s;
       }
 
       &:hover {
 
-        .post-author-icon {
+        :nth-child(1) {
           transform: rotate(45deg);
         }
 
-        .post-author-name {
+        :nth-child(2) {
           opacity: 1;
+          left: 32px;
         }
       }
     }
