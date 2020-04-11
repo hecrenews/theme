@@ -18,4 +18,10 @@
     filter: blur(20px);
     z-index: -1;
   }
-};
+}
+
+article {
+  width: calc(80% - 32px);
+  margin-left: 10%;
+  margin-right: 10%;
+}
