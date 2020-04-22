@@ -16,7 +16,6 @@ ul.post-list {
 
   li {
     margin: 16px;
-    flex-grow: 1;
   }
 
   .post {
@@ -27,7 +26,6 @@ ul.post-list {
     display: flex;
     flex-direction: column;
     transition: 0.3s;
-    width: 100%;
 
     .post-author {
       position: absolute;
