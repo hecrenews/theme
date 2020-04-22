@@ -42,7 +42,7 @@ nav {
           i {
             position: absolute;
             transition: 0.3s;
-            bottom: -64px;
+            transform: : translateY(64px);
           }
         }
       }
@@ -52,12 +52,8 @@ nav {
 
         .nav-link {
 
-          p {
+          p, i {
             transform: translateY(-64px);
-          }
-
-          i {
-            bottom: 0;
           }
         }
       }
