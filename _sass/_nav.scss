@@ -25,8 +25,22 @@ nav {
         text-decoration: none;
         font-family: sans-serif;
         padding: 16px;
+
+        .nav-link {
+          position: relative;
+
+          p {
+            position: relative;
+            color: #fff;
+            margin: 0;
+          }
+
+          i {
+            position: absolute;
+          }
+        }
       }
-      
+
       &:hover {
         background-color: #ee2323;
       }
