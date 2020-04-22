@@ -6,6 +6,7 @@
   margin-top: 16px;
   img {
     border-radius: 4px;
+    height: 60vh;
   }
   .post-banner-blur {
     position: absolute;
@@ -14,7 +15,8 @@
     left: 0;
     right: 0;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
+    background-position: center;
     filter: blur(20px);
     z-index: -1;
   }
