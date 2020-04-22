@@ -52,8 +52,12 @@ nav {
 
         .nav-link {
 
-          p, i {
+          p {
             transform: translateY(-64px);
+          }
+
+          i {
+            transform: translateY(0);
           }
         }
       }
