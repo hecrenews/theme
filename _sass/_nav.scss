@@ -28,21 +28,32 @@ nav {
 
         .nav-link {
           position: relative;
+          display: flex;
+          justify-content: center;
 
           p {
             position: relative;
             color: #fff;
             margin: 0;
+            transition: 0.3s;
           }
 
           i {
             position: absolute;
+            transition: 0.3s;
           }
         }
       }
 
       &:hover {
         background-color: #ee2323;
+
+        .nav-link {
+
+          p, i {
+            transform: translateY(-64px;);
+          }
+        }
       }
     }
   }
