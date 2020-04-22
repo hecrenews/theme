@@ -25,6 +25,7 @@ ul.post-list {
     position: relative;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     transition: 0.3s;
 
     .post-author {
@@ -69,6 +70,7 @@ ul.post-list {
     .post-thumb {
       display: block;
       max-height: 40vh;
+      width: 100%;
     }
 
     .post-text {
