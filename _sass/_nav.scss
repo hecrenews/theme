@@ -8,20 +8,25 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    overflow: hidden;
+
     img {
       width: 64px;
       height: 64px;
     }
+
     li {
       display: flex;
       align-items: center;
       transition: 0.3s;
+
       a {
         color: #fff;
         text-decoration: none;
         font-family: sans-serif;
         padding: 16px;
       }
+      
       &:hover {
         background-color: #ee2323;
       }
