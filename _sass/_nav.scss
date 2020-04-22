@@ -30,6 +30,7 @@ nav {
           position: relative;
           display: flex;
           justify-content: center;
+          align-items: center;
 
           p {
             position: relative;
@@ -41,6 +42,7 @@ nav {
           i {
             position: absolute;
             transition: 0.3s;
+            bottom: -64px;
           }
         }
       }
