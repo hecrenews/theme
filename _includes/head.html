@@ -28,7 +28,8 @@
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "dateModified": "{{ page.date | date_to_xmlschema }}",
     "author": {
-      "{% include authors/{{ post.author }}/name.html %}"
+      "@type": "person",
+      "name": "{% include authors/{{ page.author }}/name.html %}"
     },
     "publisher": {
       "@type": "Organization",
