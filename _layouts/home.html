@@ -17,7 +17,7 @@ layout: default
         <div class="post">
           <div class="post-author">
             {% include authors/{{ post.author }}/icon.html %}
-            {% include authors/{{ post.author }}/name.html %}
+            <p>{% include authors/{{ post.author }}/name.html %}</p>
           </div>
           <img class="post-thumb" src="{{ post.thumb }}">
           <div class="post-text">
