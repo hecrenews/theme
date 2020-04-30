@@ -12,4 +12,29 @@
   <link type="text/css" rel="stylesheet" href="/assets/css/main.css">
   <link type="text/css" rel="stylesheet" href="/assets/fa/css/all.min.css">
   <title>Hecrenews</title>
+  {% if page.layout == "post" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://google.com/article"
+    },
+    "headline": "{{ page.title }}",
+    "image": [
+      "https://hecrenews.github.io{{ page.thumb }}"
+    ],
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "author": {
+      "{% include authors/{{ post.author }}/name.html %}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hecrenews"
+    }
+  }
+  </script>
+  {% endif %}
 </head>
