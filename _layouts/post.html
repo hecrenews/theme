@@ -15,6 +15,8 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
+    </p>
+    <p class="post-author">{% include authors/{{ page.author }}/name.html %}</p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
