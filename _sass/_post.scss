@@ -4,10 +4,13 @@
   width: 100%;
   position: relative;
   margin-top: 16px;
+  margin-bottom:64px;
+
   img {
     border-radius: 4px;
     height: 60vh;
   }
+
   .post-banner-blur {
     position: absolute;
     top: 0;
@@ -27,12 +30,27 @@ article {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 25vh;
-}
 
-.post-content {
-  margin-top: 32px;
-  
-  p {
-    font-size: 1.4rem;
+  .header{
+
+    .post-title {
+      font-size: 2rem;
+    }
+
+    .post-meta {
+      font-size: 1rem;
+    }
+
+    .post-author {
+      font-size: 1.2rem;
+    }
+  }
+
+  .post-content {
+    margin-top: 32px;
+
+    p {
+      font-size: 1.4rem;
+    }
   }
 }
