@@ -41,5 +41,14 @@
     }
   }
   </script>
+  {% elsif page.layout == "home" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "http://hecrenews.github.io",
+    "logo": "http://hecrenews.github.io/assets/images/hen.jepg"
+  }
+  </script>
   {% endif %}
 </head>
