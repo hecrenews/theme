@@ -19,19 +19,9 @@
   }
 }
 
-ul.post-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.post-card-container {
 
-  li {
-    margin: 16px;
-  }
-
-  .post {
+  .post-card {
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
     border-radius: 4px;
     overflow: hidden;
@@ -40,7 +30,7 @@ ul.post-list {
     flex-direction: column;
     transition: 0.3s;
 
-    .post-author {
+    &-author {
       position: absolute;
       top: 8px;
       left: 8px;
@@ -81,24 +71,24 @@ ul.post-list {
       }
     }
 
-    .post-thumb {
+    &-thumb {
       display: block;
       max-height: 40vh;
       width: 100%;
       max-width: 50vw
     }
 
-    .post-text {
+    &-text {
       padding: 16px;
       display: flex;
       justify-content: space-between;
 
-      .post-meta {
+      &-date {
         font-family: sans-serif;
         padding-left: 8px;
       }
 
-      .post-link {
+      &-link {
         font-family: sans-serif;
         text-decoration: underline;
         color: #33a5ff;
