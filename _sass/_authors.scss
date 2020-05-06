@@ -1,7 +1,6 @@
 .authors {
   padding: 16px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -21,6 +20,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 16px;
 
     img {
       width: 48px;
@@ -34,7 +34,8 @@
     }
 
     .author-name {
-
+      border-left: 1px solid #ccc;
+      margin-left: 16px;
     }
   }
 
