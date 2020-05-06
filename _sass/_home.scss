@@ -77,7 +77,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 45vh;
+      height: 30vw;
 
       &-blur {
         position: absolute;
@@ -94,7 +94,6 @@
 
       img {
         height: 100%;
-        box-shadow: 0 -5px 10px 5px #000a;
       }
     }
 
