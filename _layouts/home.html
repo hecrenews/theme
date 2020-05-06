@@ -12,34 +12,35 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Latest" }}</h2>
     <div id="latest">
-      <ul class="post-list">
+      <div class="post-card-container">
         {%- for post in site.posts limit:1 -%}
-        <li>
-          <div class="post">
-            <div class="post-author">
-              {% include authors/{{ post.author }}/icon.html %}
-              <p>{% include authors/{{ post.author }}/name.html %}</p>
-            </div>
-            <img class="post-thumb" src="{{ post.thumb }}">
-            <div class="post-text">
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-              <span class="post-meta">{{ post.date | date: date_format }}</span>
-              {%- if site.show_excerpts -%}
-                {{ post.excerpt }}
-                {%- endif -%}
-              </div>
-            </div>
-          </li>
+        <div class="post-card">
+          <div class="post-card-author">
+            {% include authors/{{ post.author }}/icon.html %}
+            <p>{% include authors/{{ post.author }}/name.html %}</p>
+          </div>
+          <img class="post-card-thumb" src="{{ post.thumb }}">
+          <div class="post-card-text">
+            <a class="post-card-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-card-date">{{ post.date | date: date_format }}</span>
+          </div>
+        </div>
         {%- endfor -%}
+      </div>
+      <div class="post-list-container">
+        <ul class="post-list">
+          {% for post in site.posts offset:1 limit:5 %}
+          <li class="post-list-item">
+            <img class="post-list-thumb" src="{{ post.thumb }}">
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            <span class="post-card-date">{{ post.date | date: date_format }}</span>
+          </li>
+          {% endfor %}
       </ul>
-      <ul class="link-list">
-        {% for post in site.posts offset:1 limit:5 %}
-          <a href="">{{ post.title | escape }}</a>
-        {% endfor %}
-    </ul>
+    </div>
   </div>
   {%- endif -%}
 
