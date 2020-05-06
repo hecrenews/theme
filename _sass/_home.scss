@@ -188,6 +188,10 @@
 
         .post-list-link {
 
+          &:after {
+            content: "\a";
+            white-space: pre;
+          }
         }
 
         .post-list-date {
