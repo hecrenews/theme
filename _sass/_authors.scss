@@ -18,7 +18,7 @@
 
   &-top {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     border-bottom: 1px solid #ccc;
     margin-bottom: 16px;
 
@@ -37,7 +37,8 @@
 
     .author-name {
       border-left: 1px solid #ccc;
-      margin-left: 0;
+      margin: 0;
+      padding-left: 16px;
       display: flex;
       align-items: center;
     }
