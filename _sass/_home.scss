@@ -135,6 +135,10 @@
       .post-list-thumb {
         width: 10vw;
         height: 10vw;
+
+        img {
+          object-fit: cover;
+        }
       }
 
       .post-list-info {

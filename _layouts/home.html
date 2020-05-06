@@ -34,7 +34,9 @@ layout: default
         <ul class="post-list">
           {% for post in site.posts offset:1 limit:5 %}
           <li class="post-list-item">
-            <img class="post-list-thumb" src="{{ post.thumb }}">
+            <div class="post-list-thumb" src="{{ post.thumb }}">
+              <img src="{{ post.thumb }}">
+            </div>
             <div class="post-list-info">
               <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
               <span class="post-list-date">{{ post.date | date: date_format }}</span>
