@@ -20,7 +20,7 @@ layout: default
             <p>{% include authors/{{ post.author }}/name.html %}</p>
           </div>
           <img class="post-card-thumb" src="{{ post.thumb }}">
-          <div class="post-card-text">
+          <div class="post-card-info">
             <a class="post-card-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
@@ -35,8 +35,10 @@ layout: default
           {% for post in site.posts offset:1 limit:5 %}
           <li class="post-list-item">
             <img class="post-list-thumb" src="{{ post.thumb }}">
-            <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            <span class="post-list-date">{{ post.date | date: date_format }}</span>
+            <div class="post-list-info">
+              <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              <span class="post-list-date">{{ post.date | date: date_format }}</span>
+            </div>
           </li>
           {% endfor %}
       </ul>

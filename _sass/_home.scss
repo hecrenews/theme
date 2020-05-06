@@ -78,7 +78,7 @@
       max-width: 50vw
     }
 
-    &-text {
+    &-info {
       padding: 16px;
       display: flex;
       justify-content: space-between;
@@ -132,16 +132,21 @@
     &-item {
 
       .post-list-thumb {
-        width: 25%;
-        height: 25%;
+        width: 10vw;
+        height: 10vw;
       }
 
-      .post-list-link {
+      .post-list-info {
+        display: flex;
+        flex-direction: column;
 
-      }
+        .post-list-link {
 
-      .post-list-date {
-        
+        }
+
+        .post-list-date {
+
+        }
       }
     }
   }
