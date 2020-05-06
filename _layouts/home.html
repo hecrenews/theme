@@ -12,7 +12,7 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Latest" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in site.posts limit:1 -%}
       <li>
         <div class="post">
           <div class="post-author">
@@ -33,6 +33,11 @@ layout: default
         </div>
       </li>
       {%- endfor -%}
+    </ul>
+    <ul class="link-list">
+      {% for post in site.posts offset:1 limit:5 %}
+      <a href="">{{ post.title | escape }}</a>
+      {% endfor %}
     </ul>
   {%- endif -%}
 
