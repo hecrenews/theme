@@ -85,6 +85,7 @@ ul.post-list {
       display: block;
       max-height: 40vh;
       width: 100%;
+      max-width: 50vw
     }
 
     .post-text {
@@ -126,4 +127,10 @@ ul.post-list {
       }
     }
   }
+}
+
+
+ul.link-list {
+  display: flex;
+  flex-direction: column;
 }
