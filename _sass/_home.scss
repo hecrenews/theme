@@ -152,6 +152,10 @@
     &-item {
       display: flex;
 
+      &:not(:last-child) {
+        border-bottom: 1px solid #ff4d4d;
+      }
+
       .post-list-thumb {
         width: 20%;
         padding-top: 20%;
