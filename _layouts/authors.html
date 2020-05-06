@@ -8,9 +8,9 @@ layout: default
 
   {% for author in site.data.authors %}
   <div class="author-card">
-    {% include authors/{{ post.author }}/icon.html %}
-    <p class="author-name">{% include authors/{{ post.author }}/name.html %}</p>
-    <p class="author-bio">{% include authors/{{ post.author }}/bio.html %}</p>
+    {% include authors/{{ author.author }}/icon.html %}
+    <p class="author-name">{% include authors/{{ author.author }}/name.html %}</p>
+    <p class="author-bio">{% include authors/{{ author.author }}/bio.html %}</p>
   </div>
   {% endfor %}
 
