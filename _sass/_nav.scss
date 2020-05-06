@@ -26,16 +26,16 @@ nav {
         font-family: sans-serif;
         padding: 16px;
 
+        &:before {
+          width: 0;
+          height: 0;
+        }
+
         .nav-link {
           position: relative;
           display: flex;
           justify-content: center;
           align-items: center;
-
-          &:before {
-            width: 0;
-            height: 0;
-          }
 
           p {
             position: relative;
@@ -55,19 +55,22 @@ nav {
       &:hover {
         background-color: #ee2323;
 
-        .nav-link {
-
+        a {
+          
           &:before {
             visibility: hidden;
             transform: scaleX(0);
           }
 
-          p {
-            transform: translateY(-64px);
-          }
+          .nav-link {
 
-          i {
-            transform: translateY(0);
+            p {
+              transform: translateY(-64px);
+            }
+
+            i {
+              transform: translateY(0);
+            }
           }
         }
       }
