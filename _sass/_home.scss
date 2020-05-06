@@ -151,6 +151,7 @@
     flex-direction: column;
 
     &-item {
+      display: flex;
 
       &:not(:last-child) {
         border-bottom: 2px solid #ff4d4d;
