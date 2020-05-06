@@ -12,6 +12,7 @@
 
   .container:nth-child(1) {
     flex: 50%;
+    margin-right: 16px;
   }
 
   .container:nth-child(2) {
@@ -43,7 +44,6 @@
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         transition: 0.3s;
         z-index: 1;
-        margin-right: 16px;
       }
 
       :nth-child(2) {
@@ -151,11 +151,14 @@
     flex-direction: column;
 
     &-item {
-      display: flex;
-      padding-bottom: 4px;
 
       &:not(:last-child) {
         border-bottom: 2px solid #ff4d4d;
+        padding-bottom: 4px;
+      }
+
+      &:not(:first-child) {
+        padding-top: 4px;
       }
 
       .post-list-thumb {
