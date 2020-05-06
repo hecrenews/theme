@@ -32,6 +32,11 @@ nav {
           justify-content: center;
           align-items: center;
 
+          &:before {
+            width: 0;
+            height: 0;
+          }
+
           p {
             position: relative;
             color: #fff;
@@ -50,13 +55,9 @@ nav {
       &:hover {
         background-color: #ee2323;
 
-        a.nav-link {
-          &:before {
-            width: 0;
-            height: 0;
-          }
+        .nav-link {
 
-          &:hover:before {
+          &:before {
             visibility: hidden;
             transform: scaleX(0);
           }
