@@ -19,7 +19,9 @@ layout: default
             {% include authors/{{ post.author }}/icon.html %}
             <p>{% include authors/{{ post.author }}/name.html %}</p>
           </div>
-          <img class="post-card-thumb" src="{{ post.thumb }}">
+          <div class="post-card-thumb" style="background-image:url({{ post.thumb }})">
+            <img src=src="{{ post.thumb }}">
+          </div>
           <div class="post-card-info">
             <a class="post-card-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
