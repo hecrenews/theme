@@ -19,7 +19,8 @@ layout: default
             {% include authors/{{ post.author }}/icon.html %}
             <p>{% include authors/{{ post.author }}/name.html %}</p>
           </div>
-          <div class="post-card-thumb" style="background-image:url({{ post.thumb }})">
+          <div class="post-card-thumb" >
+            <div class="post-card-thumb-blur" style="background-image:url({{ post.thumb }})"></div>
             <img src="{{ post.thumb }}">
           </div>
           <div class="post-card-info">
