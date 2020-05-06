@@ -7,6 +7,18 @@
 
 }
 
+#latest {
+  display: flex;
+
+  :nth-child(1) {
+    flex: 25%;
+  }
+
+  :nth-child(2) {
+    flex: 75%;
+  }
+}
+
 ul.post-list {
   list-style: none;
   margin: 0;
