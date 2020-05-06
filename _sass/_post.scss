@@ -20,7 +20,8 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
-    filter: blur(20px);
+    filter: blur(10px);
+    transform: scale(1.1);
     z-index: -1;
   }
 }

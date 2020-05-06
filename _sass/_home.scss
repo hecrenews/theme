@@ -12,7 +12,6 @@
 
   .container:nth-child(1) {
     flex: 50%;
-    height: 25vh;
   }
 
   .container:nth-child(2) {
@@ -78,6 +77,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 45vh;
 
       &-blur {
         position: absolute;
@@ -88,7 +88,8 @@
         z-index: -1;
         background-position: center;
         background-size: 100% auto;
-        filter: blur(20px);
+        filter: blur(8px);
+        transform: scale(1.1);
       }
 
       img {
