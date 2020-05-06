@@ -11,11 +11,11 @@
   display: flex;
 
   .container:nth-child(1) {
-    flex: 25%;
+    flex: 50%;
   }
 
   .container:nth-child(2) {
-    flex: 75%;
+    flex: 50%;
   }
 }
 
