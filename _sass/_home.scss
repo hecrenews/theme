@@ -155,11 +155,11 @@
 
       &:not(:last-child) {
         border-bottom: 2px solid #ff4d4d;
-        padding-bottom: 4px;
+        padding-bottom: 8px;
       }
 
       &:not(:first-child) {
-        padding-top: 4px;
+        padding-top: 8px;
       }
 
       .post-list-thumb {
@@ -175,6 +175,11 @@
           height: 100%;
           position: absolute;
           top: 0;
+          box-shadow: 0 1px 3px rgba(0,0,0,.25);
+
+          &:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,.25);
+          }
         }
       }
 
