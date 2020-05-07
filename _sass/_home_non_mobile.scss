@@ -1,0 +1,12 @@
+#latest {
+  display: flex;
+
+  .container:nth-child(1) {
+    flex: 50%;
+    margin-right: 16px;
+  }
+
+  .container:nth-child(2) {
+    flex: 50%;
+  }
+}
