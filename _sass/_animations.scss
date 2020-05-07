@@ -1,0 +1,98 @@
+// From authors
+.author-card {
+  transition: 0.3s;
+
+  &-top {
+    img {
+      transition: 0.3s;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+    &-top {
+
+      img {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+// From general
+a {
+  text-decoration: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #33a5ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.3s;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
+
+// From home
+.post-card-container {
+
+  .post-card {
+    transition: 0.3s;
+
+    &-author {
+
+      :nth-child(1) {
+        transition: 0.3s;
+      }
+
+      :nth-child(2) {
+        transition: 0.3s;
+      }
+
+      &:hover {
+        :nth-child(1) {
+          transform: rotate(45deg);
+        }
+
+        :nth-child(2) {
+          opacity: 1;
+          left: 54px;
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+  }
+}
+
+.post-list-container {
+
+  .post-list {
+
+    &-item {
+
+      .post-list-thumb {
+
+        img {
+          transition: 0.3s;
+
+          &:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,.25);
+          }
+        }
+      }
+    }
+  }
+}
