@@ -48,29 +48,6 @@ nav {
           }
         }
       }
-
-      &:hover {
-        background-color: #ee2323;
-
-        a {
-
-          &:before {
-            visibility: hidden;
-            transform: scaleX(0);
-          }
-
-          .nav-link {
-
-            p {
-              transform: translateY(-64px);
-            }
-
-            i {
-              transform: translateY(0);
-            }
-          }
-        }
-      }
     }
   }
 }
