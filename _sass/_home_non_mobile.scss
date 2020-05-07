@@ -11,3 +11,17 @@
     flex: 50%;
   }
 }
+
+.post-list-container {
+
+  .post-list {
+
+    &-item {
+
+      .post-list-thumb {
+        width: 50%;
+        padding-top: 50%;
+      }
+    }
+  }
+}
