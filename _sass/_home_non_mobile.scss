@@ -12,6 +12,16 @@
   }
 }
 
+.post-card-container {
+
+  .post-card {
+
+    &-author {
+      visibility: visible;
+    }
+  }
+}
+
 .post-list-container {
 
   .post-list {
