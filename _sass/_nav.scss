@@ -9,6 +9,7 @@ nav {
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow: hidden;
 
     :nth-child(even) {
