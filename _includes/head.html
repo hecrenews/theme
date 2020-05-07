@@ -10,9 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="/assets/css/main.css">
-  <link type="text/css" rel="stylesheet" href="/assets/css/non_mobile.css" media="{{ site.data.devices.tablet }}">
-  <link type="text/css" rel="stylesheet" href="/assets/css/animation.css" media="{{ site.data.devices.computer }}">
-  <link type="text/css" rel="stylesheet" href="/assets/fa/css/all.min.css" media="{{ site.data.devices.computer }}">
+  <link type="text/css" rel="stylesheet" href="/assets/css/non_mobile.css" media="screen and (min-width: {{ site.data.devices.tablet }})">
+  <link type="text/css" rel="stylesheet" href="/assets/css/animation.css" media="screen and (min-width: {{ site.data.devices.computer }})">
+  <link type="text/css" rel="stylesheet" href="/assets/fa/css/all.min.css" media="screen and (min-width: {{ site.data.devices.computer }})">
   <title>{{ page.title | default: Hecrenews}}</title>
   {% if page.layout == "post" %}
   <script type="application/ld+json">
