@@ -1,5 +1,6 @@
 #latest {
   display: flex;
+  flex-direction: row;
 
   .container:nth-child(1) {
     flex: 50%;
