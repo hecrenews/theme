@@ -126,10 +126,11 @@
       }
 
       .post-list-thumb {
-        width: 15%;
-        padding-top: 15%;
+        width: 40%;
+        padding-top: 40%;
         position: relative;
         margin-right: 16px;
+        align-self: flex-start;
 
         img {
           object-fit: cover;
