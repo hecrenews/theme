@@ -18,7 +18,6 @@ nav {
     li {
       display: flex;
       align-items: center;
-      transition: 0.3s;
 
       a {
         color: #fff;
@@ -41,12 +40,10 @@ nav {
             position: relative;
             color: #fff;
             margin: 0;
-            transition: 0.3s;
           }
 
           i {
             position: absolute;
-            transition: 0.3s;
             transform: translateY(64px);
           }
         }
@@ -56,7 +53,7 @@ nav {
         background-color: #ee2323;
 
         a {
-          
+
           &:before {
             visibility: hidden;
             transform: scaleX(0);
