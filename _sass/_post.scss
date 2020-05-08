@@ -75,10 +75,11 @@ article {
   margin-top: 4px;
 
   .post-tag {
-    margin: 0 16px 0 0;
+    margin: 0 8px 0 0;
     padding: 4px 8px;
     border-radius: 32px;
     background-color: #ff4d4d;
     color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
   }
 }
