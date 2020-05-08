@@ -60,7 +60,8 @@
     .post-tag-container {
       position: absolute;
       left: 8px;
-      bottom: 64px;
+      bottom: 59px;
+      z-index: 1;
     }
 
     &-thumb {
