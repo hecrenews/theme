@@ -72,10 +72,11 @@ article {
 
 .post-tag-container {
   display: flex;
+  margin-top: 4px;
 
   .post-tag {
-    margin-right: 16px;
-    padding: 0 8px;
+    margin: 0 16px 0 0;
+    padding: 4px 8px;
     border-radius: 32px;
     background-color: #ff4d4d;
     color: #fff;
