@@ -9,6 +9,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% endif %}
   <link type="text/css" rel="stylesheet" href="/assets/css/main.css">
   <link type="text/css" rel="stylesheet" href="/assets/css/non_mobile.css" media="screen and (min-width: {{ site.data.devices['tablet'].size }})">
   <link type="text/css" rel="stylesheet" href="/assets/css/animations.css" media="screen and (min-width: {{ site.data.devices['computer'].size }})">
@@ -27,6 +30,7 @@
     "image": [
       "https://hecrenews.github.io{{ page.thumb }}"
     ],
+    "thumbnailUrl": "https://hecrenews.github.io{{ page.thumb }}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "dateModified": "{{ page.date | date_to_xmlschema }}",
     "author": {
