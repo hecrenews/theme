@@ -6,22 +6,18 @@
     gtag('js', new Date());
     gtag('config', 'UA-163796425-1');
   </script>
+  <!-- Metas and Rich Results -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% if page.description %}
     <meta name="description" content="{{ page.description }}">
   {% endif %}
-  <link type="text/css" rel="stylesheet" href="/assets/css/main.css">
-  <link type="text/css" rel="stylesheet" href="/assets/css/non_mobile.css" media="screen and (min-width: {{ site.data.devices['tablet'].size }})">
-  <link type="text/css" rel="stylesheet" href="/assets/css/animations.css" media="screen and (min-width: {{ site.data.devices['computer'].size }})">
-  <link type="text/css" rel="stylesheet" href="/assets/fa/css/all.min.css" media="screen and (min-width: {{ site.data.devices['computer'].size }})">
-  {% if page.title %}
-   <title>{{ page.title }}</title>
-  {% else %}
-    <title>Hecrenews</title>
-  {% endif %}
   {% if page.layout == "post" %}
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="An article about {{ page.title }}">
+  <meta property="og:image" content="https://hecrenews.github.io{{ page.thumb }}">
+  <meta property="og:url" content="https://hecrenews.github.io{{ page.url }}">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -60,5 +56,16 @@
     "logo": "https://hecrenews.github.io/assets/images/hen.png"
   }
   </script>
+  {% endif %}
+  <!-- Styles -->
+  <link type="text/css" rel="stylesheet" href="/assets/css/main.css">
+  <link type="text/css" rel="stylesheet" href="/assets/css/non_mobile.css" media="screen and (min-width: {{ site.data.devices['tablet'].size }})">
+  <link type="text/css" rel="stylesheet" href="/assets/css/animations.css" media="screen and (min-width: {{ site.data.devices['computer'].size }})">
+  <link type="text/css" rel="stylesheet" href="/assets/fa/css/all.min.css" media="screen and (min-width: {{ site.data.devices['computer'].size }})">
+  <!-- Title -->
+  {% if page.title %}
+   <title>{{ page.title }}</title>
+  {% else %}
+    <title>Hecrenews</title>
   {% endif %}
 </head>
