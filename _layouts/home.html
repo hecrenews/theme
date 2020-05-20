@@ -91,11 +91,31 @@ layout: default
             </div>
             {%- endfor -%}
           </div>
+          <div class="post-list-container container">
+            <ul class="post-list">
+              {% for post in site.posts offset:1 limit:5 %}
+              <li class="post-list-item">
+                <div class="post-list-thumb">
+                  <img src="{{ post.thumb }}">
+                </div>
+                <div class="post-list-info">
+                  <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                  <span class="post-list-date">{{ post.date | date: date_format }}</span>
+                  <div class="post-tag-container">
+                    {% for tag in post.tags %}
+                    <p class="post-tag">{{ tag }}</p>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
       <div class="post-section">
-        <h2 class="post-list-heading">HBS</h2>
-        <div id="news" class="flex-section">
+        <h2 class="post-list-heading">HBA</h2>
+        <div id="hba" class="flex-section">
           <div class="post-card-container container">
             {%- for post in site.posts limit:1 -%}
             <div class="post-card">
@@ -121,6 +141,26 @@ layout: default
               </div>
             </div>
             {%- endfor -%}
+          </div>
+          <div class="post-list-container container">
+            <ul class="post-list">
+              {% for post in site.posts offset:1 limit:5 %}
+              <li class="post-list-item">
+                <div class="post-list-thumb">
+                  <img src="{{ post.thumb }}">
+                </div>
+                <div class="post-list-info">
+                  <a class="post-list-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                  <span class="post-list-date">{{ post.date | date: date_format }}</span>
+                  <div class="post-tag-container">
+                    {% for tag in post.tags %}
+                    <p class="post-tag">{{ tag }}</p>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
       </div>
