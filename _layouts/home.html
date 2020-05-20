@@ -10,9 +10,11 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
+    <!-- Latest news sections -->
     <div class="post-section">
       <h2 class="post-list-heading">Latest</h2>
       <div id="latest" class="flex-section">
+        <!-- Big Card -->
         <div class="post-card-container container">
           {%- for post in site.posts limit:1 -%}
           <div class="post-card">
@@ -39,6 +41,7 @@ layout: default
           </div>
           {%- endfor -%}
         </div>
+        <!-- Article List -->
         <div class="post-list-container container">
           <ul class="post-list">
             {% for post in site.posts offset:1 limit:5 %}
@@ -61,10 +64,13 @@ layout: default
         </div>
       </div>
     </div>
+    <!-- News and HBA Section -->
     <div class="flex-section">
+      <!-- News Section -->
       <div class="post-section">
         <h2 class="post-list-heading">News</h2>
         <div id="news" class="flex-section">
+          <!-- Big Card -->
           <div class="post-card-container container">
             {%- for post in site.posts limit:1 -%}
             <div class="post-card">
@@ -91,6 +97,7 @@ layout: default
             </div>
             {%- endfor -%}
           </div>
+          <!-- Article List -->
           <div class="post-list-container container">
             <ul class="post-list">
               {% for post in site.posts offset:1 limit:5 %}
@@ -113,9 +120,11 @@ layout: default
           </div>
         </div>
       </div>
+      <!-- HBA Section -->
       <div class="post-section">
         <h2 class="post-list-heading">HBA</h2>
         <div id="hba" class="flex-section">
+          <!-- Big Card -->
           <div class="post-card-container container">
             {%- for post in site.posts limit:1 -%}
             <div class="post-card">
@@ -142,6 +151,7 @@ layout: default
             </div>
             {%- endfor -%}
           </div>
+          <!-- Article List -->
           <div class="post-list-container container">
             <ul class="post-list">
               {% for post in site.posts offset:1 limit:5 %}

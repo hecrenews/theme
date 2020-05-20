@@ -7,11 +7,11 @@
 
 }
 
-#latest {
+.flex-section {
   display: flex;
   flex-direction: column;
 
-  .container {
+  & > * {
     margin-bottom: 16px;
   }
 }
