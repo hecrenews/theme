@@ -1,18 +1,14 @@
 #latest {
-  display: flex;
-  flex-direction: row;
-
   .container:nth-child(1) {
-    flex: 50%;
-    min-width: 50%;
-    max-width: 50%;
+    disaply: inline-block;
+    width: calc(50% - 16px)
     margin-right: 16px;
   }
 
   .container:nth-child(2) {
-    flex: 50%;
-    min-width: 50%;
-    max-width: 50%;
+    display: inline-block;
+    width: calc(50% - 16px);
+    vertical-align: top;
   }
 }
 
