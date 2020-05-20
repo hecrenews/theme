@@ -13,7 +13,6 @@
     width: 100%;
     display: inline-block;
     margin-bottom: 16px;
-    vertical-align: top;
   }
 }
 
@@ -155,6 +154,7 @@
       .post-list-info {
         width: calc(50% - 16px);
         display: inline-block;
+        vertical-align: top;
 
         .post-list-link {
 

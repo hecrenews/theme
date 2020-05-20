@@ -1,4 +1,4 @@
-#latest {
+#latest, #news, #hba {
   .container:nth-child(1) {
     width: calc(50% - 16px);
     margin-right: 16px;
@@ -6,7 +6,6 @@
 
   .container:nth-child(2) {
     width: calc(50% - 6px);
-    vertical-align: top;
   }
 }
 
