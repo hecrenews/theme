@@ -121,7 +121,7 @@ layout: default
         </div>
       </div>
       <!-- HBA Section -->
-      {% assign posts = sites.post | slice: 7 | where: "tag", "HBA" %}
+      {% assign posts = sites.post | slice: 7 %}
       <div class="post-section">
         <h2 class="post-list-heading">HBA</h2>
         <div id="hba" class="flex-section">
@@ -155,7 +155,7 @@ layout: default
           <!-- Article List -->
           <div class="post-list-container container">
             <ul class="post-list">
-              {% for post in posts offset:7 limit:5 | where: "tags", "HBA" %}
+              {% for post in posts offset:7 limit:5 %}
               <li class="post-list-item">
                 <div class="post-list-thumb">
                   <img src="{{ post.thumb }}">
