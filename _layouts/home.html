@@ -121,7 +121,7 @@ layout: default
         </div>
       </div>
       <!-- HBA Section -->
-      {% assign posts = site.posts %}
+      {% assign posts = site.posts | where: "tags", "HBA" %}
       <div class="post-section">
         <h2 class="post-list-heading">HBA</h2>
         <div id="hba" class="flex-section">
