@@ -1,4 +1,4 @@
-#latest, #news, #hba {
+#latest {
   .container:nth-child(1) {
     width: calc(50% - 16px);
     margin-right: 16px;
@@ -11,13 +11,22 @@
 
 #news-hba-section {
 
+  #news, #hba {
+
+    .container {
+      width: 100%;
+    }
+  }
+
   .news-section {
     width: calc(50% - 16px);
     margin-right: 16px;
+    display: inline-block;
   }
 
   .hba-section {
     width: calc(50% - 6px);
+    display: inline-block;
   }
 }
 
