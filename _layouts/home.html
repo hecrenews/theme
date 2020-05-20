@@ -11,7 +11,7 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <!-- Latest news sections -->
-    <div class="post-section">
+    <div id="news-section">
       <h2 class="post-list-heading">Latest</h2>
       <div id="latest" class="flex-section">
         <!-- Big Card -->
@@ -65,7 +65,7 @@ layout: default
       </div>
     </div>
     <!-- News and HBA Section -->
-    <div class="flex-section">
+    <div id="news-hba-section">
       <!-- News Section -->
       <div class="post-section">
         <h2 class="post-list-heading">News</h2>
@@ -121,7 +121,7 @@ layout: default
         </div>
       </div>
       <!-- HBA Section -->
-      {% assign posts = sites.post | where: "tags","HBA" %}
+      {% assign posts = sites.post | where: "categories","jekyll" %}
       <div class="post-section">
         <h2 class="post-list-heading">HBA</h2>
         <div id="hba" class="flex-section">
@@ -155,7 +155,7 @@ layout: default
           <!-- Article List -->
           <div class="post-list-container container">
             <ul class="post-list">
-              {% for post in posts limit:5 %}
+              {% for post in posts offset:1 limit:5 %}
               <li class="post-list-item">
                 <div class="post-list-thumb">
                   <img src="{{ post.thumb }}">
