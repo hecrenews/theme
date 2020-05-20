@@ -1,13 +1,11 @@
 #latest {
   .container:nth-child(1) {
-    display: inline-block;
     width: calc(50% - 16px);
     margin-right: 16px;
   }
 
   .container:nth-child(2) {
-    display: inline-block;
-    width: calc(50% - 16px);
+    width: calc(50% - 6px);
     vertical-align: top;
   }
 }

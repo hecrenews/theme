@@ -7,10 +7,12 @@
 
 }
 
-#latest {
+#latest, #news, #hba {
 
   .container {
+    display: inline-block;
     margin-bottom: 16px;
+    vertical-align: top;
   }
 }
 
