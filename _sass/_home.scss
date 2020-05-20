@@ -122,7 +122,6 @@
     flex-direction: column;
 
     &-item {
-      display: flex;
 
       &:not(:last-child) {
         border-bottom: 2px solid #ff4d4d;
@@ -139,6 +138,7 @@
         position: relative;
         margin-right: 16px;
         align-self: flex-start;
+        display: inline-block;
 
         img {
           object-fit: cover;
@@ -153,6 +153,7 @@
 
       .post-list-info {
         width: calc(50% - 16px);
+        display: inline-block;
 
         .post-list-link {
 
