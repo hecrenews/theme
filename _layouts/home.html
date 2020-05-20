@@ -102,7 +102,7 @@ layout: default
           <!-- Article List -->
           <div class="post-list-container container">
             <ul class="post-list">
-              {% for post in posts offset:1 limit:5 %}
+              {% for post in posts limit:5 %}
               <li class="post-list-item">
                 <div class="post-list-thumb">
                   <img src="{{ post.thumb }}">
