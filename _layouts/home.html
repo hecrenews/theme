@@ -65,6 +65,7 @@ layout: default
       </div>
     </div>
     <!-- News and HBA Section -->
+    {% assign posts = site.posts | where: "tags", "News" %}
     <div id="news-hba-section">
       <!-- News Section -->
       <div class="news-section">

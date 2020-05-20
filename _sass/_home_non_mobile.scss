@@ -1,10 +1,22 @@
-#latest, #news, #hba, #news-hba-section {
+#latest, #news, #hba {
   .container:nth-child(1) {
     width: calc(50% - 16px);
     margin-right: 16px;
   }
 
   .container:nth-child(2) {
+    width: calc(50% - 6px);
+  }
+}
+
+#news-hba-section {
+
+  .news-section {
+    width: calc(50% - 16px);
+    margin-right: 16px;
+  }
+
+  .hba-section {
     width: calc(50% - 6px);
   }
 }
