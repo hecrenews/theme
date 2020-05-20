@@ -11,7 +11,7 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <!-- Latest news sections -->
-    <div id="news-section">
+    <div id="latest-section">
       <h2 class="post-list-heading">Latest</h2>
       <div id="latest" class="flex-section">
         <!-- Big Card -->
@@ -67,7 +67,7 @@ layout: default
     <!-- News and HBA Section -->
     <div id="news-hba-section">
       <!-- News Section -->
-      <div class="post-section">
+      <div class="news-section">
         <h2 class="post-list-heading">News</h2>
         <div id="news" class="flex-section">
           <!-- Big Card -->
@@ -122,7 +122,7 @@ layout: default
       </div>
       <!-- HBA Section -->
       {% assign posts = site.posts | where: "tags", "HBA" %}
-      <div class="post-section">
+      <div class="hba-section">
         <h2 class="post-list-heading">HBA</h2>
         <div id="hba" class="flex-section">
           <!-- Big Card -->
