@@ -1,7 +1,10 @@
 footer {
   background-color: #3a3a3a;
   padding: 16px;
-  color: #fff;
   display: flex;
   flex-direction: column;
+
+  span, p, a {
+    color: #fff;
+  }
 }
